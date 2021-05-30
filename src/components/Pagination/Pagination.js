@@ -4,8 +4,8 @@ import { ReactComponent as ArrowRight } from './Arrow_Right.svg';
 import './Pagination.css';
 
 function Pagination({ page, setPage, perPage, totalItems }) {
-  const endIndex = page * perPage;
-  const startIndex = endIndex - perPage + 1;
+  const endIndex = Math.min(page * perPage, totalItems);
+  const startIndex = (page - 1) * perPage + 1;
   const pageCount = Math.ceil(totalItems / perPage);
 
   return (

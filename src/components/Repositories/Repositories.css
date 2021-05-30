@@ -1,16 +1,14 @@
 main {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+  flex-grow: 1;
   padding: 100px 56px 0 128px;
-
   max-width: 877px;
 }
 
 .repo {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background: white;
   margin-bottom: 24px;
   padding: 24px 32px;
