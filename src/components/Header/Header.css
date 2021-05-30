@@ -1,0 +1,19 @@
+header {
+  background: var(--color-primary);
+  height: 72px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    padding: 0 20px;
+  }
+}
+
+.logo {
+  margin: 0 20px;
+}

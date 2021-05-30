@@ -1,0 +1,31 @@
+.search {
+  height: 40px;
+  max-width: 500px;
+  flex-grow: 1;
+  margin-right: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.searchImage {
+  margin-left: 19px;
+  margin-right: 13px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  height: 24px;
+  flex-grow: 1;
+  padding-right: 10px;
+  width: 85%;
+  max-width: 420px;
+  font: inherit;
+}
+
+.searchInput::placeholder {
+  color: #808080;
+  letter-spacing: 0.01em;
+}

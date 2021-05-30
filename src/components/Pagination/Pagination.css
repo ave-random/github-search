@@ -1,0 +1,27 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.paginationPagesContainer {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.paginationPage {
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 2px 6px;
+}
+
+.paginationPage:hover,
+.paginationPage:active,
+.paginationActive {
+  background: var(--color-primary);
+  fill: white;
+  color: white;
+}
