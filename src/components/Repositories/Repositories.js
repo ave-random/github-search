@@ -22,9 +22,7 @@ function Repositories({ user }) {
         });
 
         setRepos(response.data);
-      } catch (error) {
-        console.log(error);
-      }
+      } catch (error) {}
 
       setIsFetched(true);
     }
