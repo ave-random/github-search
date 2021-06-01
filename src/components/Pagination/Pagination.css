@@ -25,3 +25,9 @@
   fill: white;
   color: white;
 }
+
+@media all and (max-width: 950px) {
+  .paginationItemsCounter {
+    display: none;
+  }
+}

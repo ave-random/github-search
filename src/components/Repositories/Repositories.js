@@ -37,14 +37,16 @@ function Repositories({ user }) {
   return (
     <main>
       <h2>Repositories ({user.public_repos})</h2>
-      {repos.map((repo) => (
-        <div key={repo.id} className="repo">
-          <a href={repo.html_url} target="_blank" rel="noreferrer">
-            {repo.name}
-          </a>
-          <span>{repo.description}</span>
-        </div>
-      ))}
+      <ul class="repoList">
+        {repos.map((repo) => (
+          <li key={repo.id} className="repo">
+            <a href={repo.html_url} target="_blank" rel="noreferrer">
+              {repo.name}
+            </a>
+            <span>{repo.description}</span>
+          </li>
+        ))}
+      </ul>
       <Pagination
         perPage={PER_PAGE}
         setPage={setPage}

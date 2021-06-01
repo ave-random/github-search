@@ -29,8 +29,10 @@ function App() {
   return (
     <div className="layout">
       <Header fetchUser={fetchUser} />
-      <Sidebar user={user} />
-      <Main user={user} isFetched={isFetched} />
+      <div className="content">
+        <Sidebar user={user} />
+        <Main user={user} isFetched={isFetched} />
+      </div>
     </div>
   );
 }

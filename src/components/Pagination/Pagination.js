@@ -10,7 +10,7 @@ function Pagination({ page, setPage, perPage, totalItems }) {
 
   return (
     <div className="paginationContainer">
-      <span>
+      <span className="paginationItemsCounter">
         {startIndex}-{endIndex} of {totalItems} items
       </span>
       <ReactPaginate
