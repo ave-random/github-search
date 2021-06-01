@@ -18,16 +18,18 @@ function Pagination({ page, setPage, perPage, totalItems }) {
         nextLabel={<ArrowRight />}
         breakLabel={'...'}
         breakClassName="paginationPage"
-        previousClassName="paginationPage"
-        nextClassName="paginationPage"
+        previousClassName="paginationArrow"
+        nextClassName="paginationArrow"
         pageCount={pageCount}
+        forcePage={page - 1}
         marginPagesDisplayed={1}
         onPageChange={({ selected }) => {
           setPage(selected + 1);
         }}
         pageClassName="paginationPage"
+        pageLinkClassName="paginationPageLink"
         containerClassName="paginationPagesContainer"
-        activeClassName="paginationActive"
+        activeLinkClassName="paginationActiveLink"
       />
     </div>
   );

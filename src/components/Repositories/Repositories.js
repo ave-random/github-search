@@ -5,14 +5,19 @@ import { useState, useEffect } from 'react';
 
 const octokit = new Octokit();
 
-function Repositories({ user }) {
+function Repositories({ user, loadingRef }) {
   const PER_PAGE = 4;
   const [page, setPage] = useState(1);
   const [repos, setRepos] = useState(null);
   const [isFetched, setIsFetched] = useState(false);
 
   useEffect(() => {
+    setPage(1);
+  }, [user]);
+
+  useEffect(() => {
     async function fetchRepos() {
+      loadingRef.current.continuousStart();
       try {
         const response = await octokit.request('GET /users/{username}/repos', {
           username: user.login,
@@ -22,22 +27,23 @@ function Repositories({ user }) {
         });
 
         setRepos(response.data);
+        loadingRef.current.complete();
       } catch (error) {}
 
       setIsFetched(true);
     }
 
     fetchRepos();
-  }, [page, user.login]);
+  }, [loadingRef, page, user.login]);
 
   if (!isFetched) {
-    return <span>Loading</span>;
+    return null;
   }
 
   return (
     <main>
       <h2>Repositories ({user.public_repos})</h2>
-      <ul class="repoList">
+      <ul className="repoList">
         {repos.map((repo) => (
           <li key={repo.id} className="repo">
             <a href={repo.html_url} target="_blank" rel="noreferrer">

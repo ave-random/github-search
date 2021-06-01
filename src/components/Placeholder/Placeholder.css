@@ -8,10 +8,10 @@
 
 .placeholderText {
   height: 62px;
-  width: 210px;
+  width: 300px;
   margin-top: 47px;
   font-size: 22px;
   line-height: 31px;
   text-align: center;
-  color: #808080;
+  color: var(--color-grey);
 }

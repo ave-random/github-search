@@ -26,6 +26,6 @@
 }
 
 .searchInput::placeholder {
-  color: #808080;
+  color: var(--color-grey);
   letter-spacing: 0.01em;
 }

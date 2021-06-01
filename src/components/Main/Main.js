@@ -4,7 +4,7 @@ import userIcon from './User_Icon.svg';
 import Repositories from '../Repositories/Repositories';
 import Placeholder from '../Placeholder/Placeholder';
 
-function Main({ user, isFetched }) {
+function Main({ user, isFetched, loadingRef }) {
   if (!isFetched) {
     return (
       <Placeholder text="Start with searching a GitHub user" img={searchBig} />
@@ -19,7 +19,7 @@ function Main({ user, isFetched }) {
     return <Placeholder text="Repositories not found" img={repIcon} />;
   }
 
-  return <Repositories user={user} />;
+  return <Repositories user={user} loadingRef={loadingRef} />;
 }
 
 export default Main;

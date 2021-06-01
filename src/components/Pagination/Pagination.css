@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: var(--color-grey);
 }
 
 .paginationPagesContainer {
@@ -10,7 +11,7 @@
   align-items: center;
 }
 
-.paginationPage {
+.paginationPageLink {
   font-size: 14px;
   border-radius: 3px;
   cursor: pointer;
@@ -18,12 +19,25 @@
   padding: 2px 6px;
 }
 
-.paginationPage:hover,
-.paginationPage:active,
-.paginationActive {
+.paginationPageLink:hover,
+.paginationPageLink:active,
+.paginationActiveLink {
   background: var(--color-primary);
-  fill: white;
   color: white;
+}
+
+.paginationArrow {
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.paginationArrow svg {
+  fill: var(--color-grey);
+}
+
+.paginationArrow:hover svg,
+.paginationArrow:active svg {
+  fill: var(--color-primary);
 }
 
 @media all and (max-width: 950px) {
