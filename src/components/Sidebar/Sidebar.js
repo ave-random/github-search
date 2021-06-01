@@ -22,24 +22,34 @@ function Sidebar({ user }) {
   return (
     <div className="userProfile">
       <img className="avatar" src={user.avatar_url} alt="avatar" />
-      <h2 className="userFullName">{user.name}</h2>
-      <a
-        className="userName"
-        href={user.html_url}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {user.login}
-      </a>
-      <div className="follow">
-        <div className="figure">
-          <img className="followersIcon" src={followersIcon} alt="followers" />
-          <span>{formatAmount(user.followers)} followers</span>
-        </div>
+      <div className="userInfo">
+        <h2 className="userFullName">{user.name}</h2>
+        <a
+          className="userName"
+          href={user.html_url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {user.login}
+        </a>
+        <div className="follow">
+          <div className="figure">
+            <img
+              className="followersIcon"
+              src={followersIcon}
+              alt="followers"
+            />
+            <span>{formatAmount(user.followers)} followers</span>
+          </div>
 
-        <div className="figure">
-          <img className="followingIcon" src={followingIcon} alt="following" />
-          <span>{formatAmount(user.following)} following</span>
+          <div className="figure">
+            <img
+              className="followingIcon"
+              src={followingIcon}
+              alt="following"
+            />
+            <span>{formatAmount(user.following)} following</span>
+          </div>
         </div>
       </div>
     </div>

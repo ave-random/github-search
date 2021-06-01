@@ -16,3 +16,9 @@ body {
 .layout {
   display: flex;
 }
+
+@media all and (max-width: 820px) {
+  .layout {
+    flex-direction: column;
+  }
+}
