@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/startup-summer-2021-task/static/css/main.f0426c47.chunk.css",
+    "main.css": "/startup-summer-2021-task/static/css/main.fbe83d52.chunk.css",
     "main.js": "/startup-summer-2021-task/static/js/main.261e28d1.chunk.js",
     "main.js.map": "/startup-summer-2021-task/static/js/main.261e28d1.chunk.js.map",
     "runtime-main.js": "/startup-summer-2021-task/static/js/runtime-main.39d4120e.js",
@@ -10,7 +10,7 @@
     "static/js/3.d95ea2cd.chunk.js": "/startup-summer-2021-task/static/js/3.d95ea2cd.chunk.js",
     "static/js/3.d95ea2cd.chunk.js.map": "/startup-summer-2021-task/static/js/3.d95ea2cd.chunk.js.map",
     "index.html": "/startup-summer-2021-task/index.html",
-    "static/css/main.f0426c47.chunk.css.map": "/startup-summer-2021-task/static/css/main.f0426c47.chunk.css.map",
+    "static/css/main.fbe83d52.chunk.css.map": "/startup-summer-2021-task/static/css/main.fbe83d52.chunk.css.map",
     "static/js/2.e5d4facc.chunk.js.LICENSE.txt": "/startup-summer-2021-task/static/js/2.e5d4facc.chunk.js.LICENSE.txt",
     "static/media/Arrow_Left.b543e624.svg": "/startup-summer-2021-task/static/media/Arrow_Left.b543e624.svg",
     "static/media/Arrow_Right.c1408257.svg": "/startup-summer-2021-task/static/media/Arrow_Right.c1408257.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.39d4120e.js",
     "static/js/2.e5d4facc.chunk.js",
-    "static/css/main.f0426c47.chunk.css",
+    "static/css/main.fbe83d52.chunk.css",
     "static/js/main.261e28d1.chunk.js"
   ]
 }
