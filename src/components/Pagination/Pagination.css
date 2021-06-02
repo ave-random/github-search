@@ -41,7 +41,12 @@
 }
 
 @media all and (max-width: 950px) {
-  .paginationItemsCounter {
-    display: none;
+  .paginationContainer {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .paginationPagesContainer {
+    padding-left: 0px;
   }
 }
